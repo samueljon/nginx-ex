@@ -207,9 +207,9 @@
 </head>
 <body>
 
-<section class='container'>
+ <section class='container'>
   <hgroup>
-    <h1>Zammad Chat Prófanir</h1>
+    <h1>Welcome to your static nginx application on OpenShift</h1>
   </hgroup>
   <div class="row">
     <section class='col-xs-12 col-sm-6 col-md-6'>
@@ -219,22 +219,24 @@
       </section>
     </section>
     <section class="col-xs-12 col-sm-6 col-md-6">
-      <h3>Spjall með Takka</h3>
-      <a href="chatbutton.html" alt="Spjalltakki">Spjall ræst handvirkt</a>
-    </section>
+      <h3>For more information and help</h3>
+      <button class="open-zammad-chat">Chat with us</button>
 
-    <script src="https://zdev01.ok.is/assets/chat/chat.min.js"></script>
-    <script>
-    $(function() {
-      new ZammadChat({
-        background: '#e9e8da',
-        fontSize: '12px',
-        chatId: 1
-      });
-    });
-    </script>
+<script src="https://zdev01.ok.is/assets/chat/chat.min.js"></script>
+<script>
+$(function() {
+  new ZammadChat({
+    background: '#e9e8da',
+    fontSize: '12px',
+    chatId: 1,
+    show: false
+  });
+});
+</script>
+    </section>
   </div> 
   <footer>
+    <div class="logo"><a href="https://www.openshift.com/"></a></div>
   </footer>
 </section>
 
